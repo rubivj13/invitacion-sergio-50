@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡50 Años de Sergio Veloz Sánchez! 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Partículas de fondo -->
+    <div id="particles"></div>
+    
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="celebration-badge">¡CELEBREMOS!</div>
+            <h1 class="hero-title">
+                <span class="number-50" onclick="createConfetti()" title="¡Haz clic para celebrar! 🎉">50</span>
+                <span class="years-text">AÑOS</span>
+            </h1>
+            <h2 class="name">Sergio Veloz Sánchez</h2>
+            <p class="subtitle">Una vida llena de momentos especiales</p>
+            <div class="countdown-container">
+                <h3>⏳ Faltan:</h3>
+                <div id="countdown" class="countdown-display"></div>
+            </div>
+            <div class="cta-buttons">
+                <button class="btn-primary" onclick="scrollToSection('galeria')">
+                    Ver Momentos 📸
+                </button>
+                <button class="btn-secondary" onclick="scrollToSection('detalles')">
+                    Detalles del Evento 🎊
+                </button>
+            </div>
+        </div>
+        <div class="floating-elements">
+            <div class="balloon balloon-1">🎈</div>
+            <div class="balloon balloon-2">🎉</div>
+            <div class="balloon balloon-3">🎂</div>
+            <div class="balloon balloon-4">🎊</div>
+            <div class="balloon balloon-5">🌟</div>
+            <div class="balloon balloon-6">🎁</div>
+        </div>
+    </section>
+
+    <!-- Galería de Fotos -->
+    <section id="galeria" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">📷</span>
+                Momentos Especiales
+            </h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Las fotos se cargan dinámicamente con JavaScript -->
+                    </div>
+                </div>
+                <button class="carousel-btn prev" id="prevBtn">‹</button>
+                <button class="carousel-btn next" id="nextBtn">›</button>
+                <div class="carousel-controls">
+                    <button class="control-btn" id="playPauseBtn">⏸️</button>
+                    <div class="carousel-indicators" id="indicators"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalles del Evento -->
+    <section id="detalles" class="details-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">🎊</span>
+                Detalles de la Celebración
+            </h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="card-icon">📅</div>
+                    <h3>Fecha</h3>
+                    <p>Sábado 7 de Junio</p>
+                    <p class="detail-sub">2025</p>
+                </div>
+                <div class="detail-card">
+                    <div class="card-icon">⏰</div>
+                    <h3>Hora</h3>
+                    <p>3:00 PM</p>
+                    <p class="detail-sub">¡No faltes!</p>
+                </div>
+                <div class="detail-card location-card">
+                    <div class="card-icon">📍</div>
+                    <h3>Ubicación</h3>
+                    <p>Calle Mina de Plata #118</p>
+                    <p>Col. Frailes</p>
+                    <p class="detail-sub">Frente a la escuela primaria Ross Landa</p>
+                    <button class="btn-map" onclick="openMap()">
+                        Ver en Google Maps 🗺️
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mensaje Especial -->
+    <section class="message-section">
+        <div class="container">
+            <div class="message-card">
+                <h2>¡Tu presencia es el mejor regalo! 🎁</h2>
+                <p>Acompáñanos a celebrar cinco décadas de vida, risas, aventuras y momentos inolvidables. Sergio ha tocado muchas vidas con su alegría y bondad, y queremos celebrarlo contigo.</p>
+                <div class="message-signature">
+                    <span>Con cariño,</span>
+                    <span class="signature">La Familia Veloz 💖</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>¡Esperamos verte ahí! 🎉</p>
+            <div class="footer-icons">
+                <span>🎂</span>
+                <span>🎈</span>
+                <span>🎊</span>
+                <span>🎉</span>
+                <span>🌟</span>
+            </div>
+            <div class="credits">
+                <p>✨ Invitación programada por la hija más hermosa, preciosa, chula y favorita de Sergio Veloz ✨</p>
+                <p class="credit-name">💕 Créditos a Rubi Veloz Jiménez 💕</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
